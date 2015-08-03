@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Netcraft Task</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Asap:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/custom.css">
+	<script src="js/respond.js"></script>
+
+	<!--[if lt IE 9]>
+	<script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body ng-app="itemStore">
+<div class="container" ng-controller="StoreController">
+	<article ng-repeat="item in items">
+
+		<img src="{{item.img.desktop}}" alt="" class="desktop-view">
+
+		<div class="widget-top">
+			<h1>{{item.title}}</h1>
+			<a href="" class="back-link mobile-view">Back to all</a>
+
+			<div>
+				Price: <span>{{item.price | currency:"₪"}}</span>
+				<span class="quantity">Quantity: <input type="number" value="1" ng-model="quantity" aria-label="quantity"></span>
+			</div>
+		</div>
+
+
+		<img ng-src="{{item.img.mobile}}" alt="" class="mobile-view">
+
+		<p ng-bind-html="item.description"></p>
+
+		<div class="widget-bottom">
+
+			<a href="" class="back-link desktop-view">Back to all</a>
+
+
+			<div>
+				<p class="total">
+					Total: <span>{{(quantity * item.price) | currency:"₪"}}</span>
+				</p>
+				<a href="" class="btn">Checkout</a>
+
+			</div>
+
+		</div>
+
+	</article>
+</div>
+
+
+<!-- javascript -->
+<script src="lib/fastclick.js"></script>
+<script src="lib/angular.min.js"></script>
+<script src="lib/angular-sanitize.min.js"></script>
+<script src="app/app.js"></script>
+
+<!-- services -->
+<script src="app/common/data.service.js"></script>
+
+</body>
+</html>
