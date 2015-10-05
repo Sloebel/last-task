@@ -17,6 +17,16 @@
 
         $scope.quantity = 1;
 
+        $scope.isTouch = function () {
+            console.log("false");
+            if ('ontouchstart' in document.documentElement) {
+                return false;
+
+            } else {
+                return true;
+            }
+        }
+
 
     }]);
 
