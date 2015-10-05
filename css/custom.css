@@ -139,10 +139,10 @@ article img {
     margin: 0px;
     float: right;
 }
-.btn:hover,
-.btn:focus {
-    background-color: #999999;
-}
+/*.btn:hover,*/
+/*.btn:focus {*/
+/*    background-color: #999999;*/
+/*}*/
 .total {
 	display: inline;
 }
