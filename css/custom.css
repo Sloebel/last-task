@@ -114,6 +114,7 @@ article:after {
 h1 {
 	margin: 0px;
 	display: inline;
+    background: #5b2347;
 }
 article {
 	padding: 25px 20px 20px 20px;
@@ -142,6 +143,9 @@ article img {
 .no-touch .btn:hover,
 .no-touch .btn:focus {
     background-color: #999999;
+}
+.no-touch h1 {
+    background: #234234;
 }
 .total {
 	display: inline;
