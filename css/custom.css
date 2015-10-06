@@ -140,7 +140,7 @@ article img {
     margin: 0px;
     float: right;
 }
-.no-touch .btn:hover,
+ .btn:hover,
 .no-touch .btn:focus {
     background-color: #999999;
 }
