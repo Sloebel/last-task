@@ -141,7 +141,7 @@ article img {
     float: right;
 }
 .no-touch .btn:hover,
-.no-touch .btn:focus {
+ .btn:focus {
     background-color: #999999;
 }
 .no-touch h1 {
