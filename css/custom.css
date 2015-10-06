@@ -144,6 +144,9 @@ article img {
 .no-touch .btn:focus {
     background-color: #999999;
 }
+.btn:active {
+	background: #f2f2f2;
+}
 .no-touch h1 {
     background: #234234;
 }
